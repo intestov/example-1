@@ -1,0 +1,215 @@
+echo "# example-1" >> README.md<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Form-with-map</title>  
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navbar navbar"> 
+        <a class="navbar-brand" href="#">
+            <img src="img/logo.png" alt=""> 
+        </a> 
+     <!-- Иконки соцюсетей подтягиваются скриптом FontAwesome ниже --> 
+            <ul class="nav justify-content-center"> 
+              <li class="nav-item"><a class="nav-link" href="https://facebook.com" target="blank"><i class="fab fa-facebook"></i></a></li>
+              <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-linkedin"></i> </a></li>
+              <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-whatsapp"></i> </a></li>
+              <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-envelope"></i> </a></li> 
+            </ul>
+          </nav>
+    </header>
+      <!-- ++++++++++++++++++++ FORM WITH MAP & PROGRESS ++++++++++++++++++++++++++++++++++++++++++ -->
+    <section class="form_with_map text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 mb-5" > <!--margin bottom: 5px -->
+          <h3 > INVEST NOW AND START EARNING </h3>
+                    <h4>ARE YOU READY TO BECOME A SMART INVESTOR AND START EARNING A HIGH MONTHLY INCOME?</br>
+                        FILL IN THE FORM AND LET US FIND THE RIGHT REAL ESTATE ASSET TO START MAKING PROFITS</h4>
+        </div>
+                <div class="col-md-12" id="form-map" > 
+                    <div class="form-row">
+                       <div class="col-md-6 mb-3">
+                         <form>                            
+                                <label for="validationDefault01" ></label>
+                                <input type="text" class="form-control" id="validationDefault01" placeholder="Full Name" required>
+                                
+                                <label for="validationDefault03"></label>
+                                <input type="email" class="form-control" id="validationDefault03"  placeholder="Email" required>
+                                <label for="validationDefault03"></label>
+                                <input type="text" class="form-control" id="validationDefault03"  placeholder="Mobile" pattern="[0-9()#&amp;+*-=.]+" title="Only numbers and phone characters (#, -, *, etc) are accepted.">
+                                <label for="validationDefault04"></label>
+                                <select class="custom-select" id="validationDefault04" required>
+                                  <option selected disabled value="Starting Capital" >Starting Capital</option>
+                                  <option value="£25,000 - £50,000">£25,000 - £50,000</option>
+                                  <option value="£51,000 - £75,000">£51,000 - £75,000</option>
+                                  <option value="£76,000 - £100,000">£76,000 - £100,000</option>
+                                  <option value="£101,000 - £150,000">£101,000 - £150,000</option>
+                                  <option value="£151,000 - £200,000">£151,000 - £200,000</option>
+                                  <option value="£201,000 - £300,000">£201,000 - £300,000</option>
+                                  <option value="More than £300,000">More than £300,000</option>
+                                </select>
+                                <div class="form-group">
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                                      <label class="form-check-label" for="invalidCheck2">
+                                        I agree to receive marketing materials via email and text messages
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <button class="btn btn-success" type="submit">Send</button>  
+                           </form>
+                        </div>
+                    
+                        <div class="col-md-6 mt-4" id="home-map"> <!-- mt-4 =  Margit-top: 4; -->
+                            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=45%20King%20Street%20Perth%20PH2%208JB%2C%20united%20kingdom&amp;t=m&amp;z=15&amp;output=embed&amp;iwloc=near" 
+                            title="45 King Street Perth PH2 8JB, united kingdom" 
+                            aria-label="45 King Street Perth PH2 8JB, united kingdom"></iframe>
+                        </div>                           
+                 </div>             
+                </div>
+                
+            </div>
+        </div>
+      </section>
+<!-- ++++++++++++++++++++++++ АНИМИРОВАННЫЕ ЦИФРЫ  ++++++++++++++++++++++++++++++++++++ -->
+
+<div class="col-md-12 text-center" id="counters" > 
+  <div class="container">
+    <div class="row">
+  <div class="col-md-3">
+    <!-- Вставляем сверху иконки из https://fontawesome.com/icons?d=gallery как шрифты
+    стили можно прописать как в html-файле, так и в CSS -->
+    <i class="fas fa-globe-africa" style="font-size:60px; color: green;"></i>
+    <div class="number" data-max="176"></div>
+    <p>LOCATIONS</p>
+  </div>
+  <div class="col-md-3">
+    <!-- тут пропишу в CSS -->
+    <i class="fas fa-house-user"></i>
+    <div class="number" data-max="66"></div>
+    <p>CONDOS</p>
+  </div>
+  <div class="col-md-3">
+    <i class="fas fa-home" style="font-size:60px; color: green;"></i>
+    <div class="number" data-max="48"></div>
+    <p>HOUSES</p>
+  </div>
+  <div class="col-md-3">
+    <i class="fas fa-warehouse" style="font-size:60px; color: green;"></i>
+    <div class="number" data-max="62"></div>
+    <p>APARTMENTS</p>
+  </div>
+     </div>
+     </div>
+</div>
+
+ <!-- ++++++++++++++++++++++++ Картинка и текст рядом БЕЗ заголовка ( На Моб. - картнка - текст, картинка -текст)  ++++++++++++++++++++++++++++++++++++ --> 
+
+ <section class="img-text">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-md-6 order-md-0 order-1">
+       <h3>No risk - Secured Investment1</h3>
+       <p>Adding real estate to your investment portfolio 
+         can help increase your monthly and annual profits
+          significantly and reduce the risk of 
+          losing your capital by creating a new channel
+           for making profits! </p>
+      </div>
+      <div class="col-md-6 text-center">
+         <img class="img-fluid" src="img/house-150x150.png" alt="">
+      </div>
+    </div>
+ 
+  </div>
+    <div class="container" id="img-lefto">
+    <div class="row mb-5">
+      <div class="col-md-6 text-center ">
+        <img class="img-fluid" src="img/profits-150x150.png" alt="">
+     </div>
+      <div class="col-md-6">
+       <h3>Guaranteed Monthly Profits</h3>
+       <p>Investing in managed properties project is 
+         considered a smart investment due to the 
+         stable capital repatriation which paid monthly 
+         by the tenants. It pays off your initial 
+         investment and increases your monthly cash flow. </p>
+      </div>
+     
+    </div>
+  </div>
+ </section>
+
+ <!-- ++++++++++++++++++++++++ Заголовок секции + Картинка и текст рядом ( на моб - текст,потом картинка) ++++++++++++++++++++++++++++++++++++ -->
+ 
+ <section class="header-img-text">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-md-6">
+        <h3>Legal and Financial Advise</h3>
+       <p>We offer our valued investors the freedom and 
+         flexibility to build their real estate smart investment portfolio.
+          Our team provides financial planning to develop a risk
+           free investment plan to reach a high return on 
+           investment and guaranteed stable significant monthly profits.  </p>
+      </div>
+      <div class="col-md-6 align-top text-center">
+         <img src="img/Financial-Planning-768X467.jpg" alt="">
+      </div>
+    </div>
+ 
+  </div>
+    <div class="container">
+    <div class="row mb-5">
+      <div class="col-md-6 text-center order-md-0 order-1">
+        <img src="img/Investment-Ideas.jpg" alt="">
+     </div>
+      <div class="col-md-6">
+       <h3>Profitable Investment Ideas</h3>
+       <p>The road to success starts with a smart idea. 
+         Our real estate investment brokers will work hard 
+         to provide tailored profitable investment ideas 
+         that will suit your budget. Our goal aims to achieve
+          your financial goals of earning high monthly and 
+          annual profits, and for the long run </p>
+      </div>
+     
+    </div>
+  </div>  
+
+<!--+++++ Секция c кнопкой "Get consultation..." и соц.иконками под кнопкой +++++++++-->
+
+  <div class="container" id="button-social">
+     <div class="row">
+         <div class="col-md-12">
+                    <a href="#" target="_blank" class="pulse">GET A FREE CONSULTATION</a> 
+                    <ul class="nav justify-content-center mr-5"> 
+                      <li class="nav-item"><a class="nav-link" href="https://facebook.com" target="blank"><i class="fab fa-facebook"></i></a></li>
+                      <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-linkedin"></i> </a></li>
+                      <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-whatsapp"></i> </a></li>
+                      <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-envelope"></i> </a></li> 
+                    </ul>
+         </div>
+         
+      </div>		
+</section>
+
+<footer class="page-footer">
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="#"> My site name</a>
+  </div>
+</footer>
+
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Подключаем прикольніе соц-иконки-->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>

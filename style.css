@@ -1,0 +1,178 @@
+.main-header{
+    background-color:rgb(245,239,224);
+    width:100%;
+    height: 200px;
+}
+/* Отступы для Logo слева */
+.navbar-brand{
+    margin-left: 23%;
+}
+/* Отступы для Menu справа */
+.nav.justify-content-center{
+    margin-right: 23%; 
+}
+/*-- Размер и цвета соц-иконок в Menu справа--- */
+ ul li {
+  font-size: 38px;
+  }
+  .fa-facebook{ 
+    color:rgb(74, 124, 218);
+}
+.fa-facebook:hover{ 
+  color:rgb(36, 79, 158);
+}
+.fa-linkedin{ 
+    color:rgb(76, 161, 218);
+}
+.fa-linkedin:hover{ 
+  color:rgb(53, 132, 156);
+}
+.fa-whatsapp{ 
+    color:rgb(76, 218, 152);
+}
+.fa-whatsapp:hover{ 
+  color:rgb(58, 172, 118);
+}
+  .fa-fa-envelope{ 
+      color:rgb(76, 218, 152);
+  }
+  .fa-fa-envelope:hover{ 
+    color:rgb(76, 185, 218);
+}
+/* ----------------------------------- */
+
+.form_with_map{
+    background-color:rgb(238,238,238);
+    padding: 5% 0 2% 0;  
+}
+/* Белый фон-прямоугольник для формы и карты */
+#form-map{
+    background-color:#fff;  
+}
+/*Отступы для чекбокса " Согласен с условиями.." */
+.form-check{
+    padding: 2% 0% 2% 3%;
+}
+
+#form-map .btn-success{
+    width: 100%; 
+}
+/*Карта на весь блок с отступом внизу 
+(именно обращаться к iframe иначе не выйдет)  */
+#home-map iframe{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 3%;
+}
+
+/* ---Медиазапрос для Logo и Меню 
+для экрана 481 и меньше px ( стандарт - 480 px----------- */
+
+@media screen and (max-width: 481px) {
+    .navbar-brand{
+        margin-left: 1%;
+    }
+    .nav.justify-content-center{
+        margin-right: 1%; 
+    }
+  }
+
+  /* Анимированные числа */
+
+  #counters{
+    background-color:rgb(238,238,238);
+    padding: 5% 0 2% 0;   
+      
+  }
+  #counters p{
+   font-weight: 500;
+    font-size: 19px
+  }
+
+  .number{
+    color: #834979;
+    font-family: "Raleway", Sans-serif;
+    font-style: oblique;
+    font-weight: 100;
+    font-size: 69px
+  }
+ .fa-house-user{
+    font-size:60px;
+     color: green;
+ } 
+
+   /* Картинка и текст рядом БЕЗ заголовка */
+   .img-text{
+       margin: 6% 0 6% 0;
+   }
+   .img-text h3{
+    color: #834979;
+    font-family: "Raleway", Sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+   }
+   .img-text p{
+    line-height: 1.5;
+    word-break: break-word;
+   }
+   .img-text img{
+    max-width: 100%;
+    padding-bottom: 2%;
+}
+/* Заголовок секции + Картинка и текст рядом */
+   
+.header-img-text{
+    padding: 6% 0 6% 0;
+    background-color:rgb(245,239,224); 
+   }
+.header-img-text h3{
+    color: #834979;
+    font-family: "Raleway", Sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 5%;
+}
+
+.header-img-text img{
+    max-width: 100%;
+    padding-bottom: 2%;
+}
+
+/*Секция c кнопкой "Get consultation..." и соц.иконками под кнопкой */
+
+  .pulse {
+    display: flex;
+    font-weight: 700;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    color:#fff;
+    background: rgba(131, 177, 47, 0.849); /* цвет кнопки */
+    animation: radial-pulse 1s infinite;
+  }
+  .pulse:hover {
+    text-decoration: none;
+    color:rgb(93, 27, 214);
+  }
+   /* Пульсация */
+  @keyframes radial-pulse {
+    0% {
+      box-shadow: 0 0 0 0px rgba(14, 112, 204, 0.7); /* Цвет Пульсации */
+    }
+  
+    100% {
+      box-shadow:  0  0  0 15px rgba(0, 0, 0, 0); /* 15px - высота по всему внешнему периметру*/
+    }
+  }
+
+.footer-copyright a {
+    color: #fff;
+   
+}
+
+.footer-copyright{
+    background-color:rgba(32, 30, 65, 0.589);
+    color: rgba(250, 246, 18, 0.952);
+}
